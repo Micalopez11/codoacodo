@@ -285,25 +285,31 @@
                 </div>
                 <div class="column right">
                     <div class="text">Escribime</div>
-                    <form action="#">
+                    <form action="#" id="contactForm">
                         <div class="fields">
                             <div class="field name">
-                                <input type="text" placeholder="Nombre" required>
+                                <label for="nombre"></label>
+                                <input type="text" id="nombre" name="nombre" placeholder="Nombre" required>
                             </div>
                             <div class="field email">
-                                <input type="email" placeholder="Email" required>
+                                <label for="email"></label>
+                                <input type="email" id="email" name="email" placeholder="Email" required>
                             </div>
                         </div>
                         <div class="field">
-                            <input type="text" placeholder="Asunto" required>
+                            <label for="asunto"></label>
+                            <input type="text" id="asunto" name="asunto" placeholder="Asunto" required>
                         </div>
                         <div class="field textarea">
-                            <textarea cols="30" rows="10" placeholder="Mensaje.." required></textarea>
+                            <label for="mensaje"></label>
+                            <textarea id="mensaje" name="mensaje" cols="30" rows="10" placeholder="Mensaje.." required></textarea>
                         </div>
-                        <div class="button-area">
-                            <button type="submit">Enviar mensaje</button>
+                        <div class="input-area">
+                            <input type="submit" value="Enviar mensaje">
                         </div>
                     </form>
+                    <div id="respuesta"></div>
+                  </div>
                 </div>
             </div>
         </div>
@@ -327,6 +333,12 @@
   <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+
+
+  <script src="script.js"></script>
+
+
 
 </body>
 

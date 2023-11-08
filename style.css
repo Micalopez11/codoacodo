@@ -498,11 +498,11 @@ section .title::after{
   padding-top: 10px;
   resize: none;
 }
-.contacto .right form .button-area{
+.contacto .right form .input-area{
   display: flex;
   align-items: center;
 }
-.right form .button-area button{
+.right form .input-area input{
   color: #fff;
   display: block;
   width: 160px!important;
@@ -517,7 +517,7 @@ section .title::after{
   border: 2px solid crimson;
   transition: all 0.3s ease;
 }
-.right form .button-area button:hover{
+.right form .input-area input:hover{
   color: crimson;
   background: none;
 }
