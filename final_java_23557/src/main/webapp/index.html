@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Estudiantes de la Plata</title>
+    <link rel="icon" type="image/x-icon" href="img/Escudo.png">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <nav>
+        <div class="brandLogo">
+            <div class="logo"></div>
+            <a href="#" class="brand">Estudiantes de La Plata</a>
+        </div>
+        <ul class="navigation">
+            <li><a href="#elclub" class="active">El club</a></li>
+            <li><a href="#jugadores">Jugadores</a></li>
+            <li><a href="#estadio">Estadio</a></li>
+            <li><a href="#anotate">Conviértete en jugador</a></li>
+            <li><a href="#"><span class="ticket">Comprar tickets</span></a></li>
+            <li><a href="vistas/login.jsp"><span class="ticket">Login</span></a></li>
+        </ul>
+    </nav>
+    <header id="elclub">
+        <div class="slider">
+            <div class="sliderText">
+                <h2>Estudiantes de La Plata</h2>
+                <p>El Club Estudiantes de La Plata es una entidad polideportiva ubicada en la ciudad de La Plata,
+                    provincia de Buenos Aires, Argentina. Fue fundado como club de fútbol el 4 de agosto de 1905 y posee
+                    alrededor de 54 000 socios. Su principal sección deportiva es el fútbol masculino y su equipo se
+                    desempeña en la Primera División de Argentina.
+                </p>
+                <a href="#" class="btnWhite">Quiero ser jugador</a>
+                <a href="#" class="btnTicket">Comprar tickets</a>
+            </div>
+            <div class="overlay"></div>
+            <ul>
+                <li><img src="img/Campeones"></li>
+            </ul>
+        </div>
+    </header>
+    <section class="jugadores" id="jugadores">
+        <h3>CONOCE A LOS</h3>
+        <h2>JUGADORES</h2>
+        <div class="cardGroup">
+            <div class="card">
+                <div class="cardImage"><img src="img/Andujar.png"></div>
+                <div class="content">
+                    <div class="heading">
+                        <div class="arq">Arquero</div>
+                        <h4>Mariano Andujar</h4>
+                    </div>
+                    <div class="cardText">Jugador argentino nacido el 30 de julio de 1983 en Lugano, Capital Federal.
+                        Tiene una altura de 1,96 metros y un peso de 88 kg. Procede del club Napoli de Italia.
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="cardImage"><img src="img/Boselli.png"></div>
+                <div class="content">
+                    <div class="heading">
+                        <div class="del">Delantero</div>
+                        <h4>Mauro Boselli</h4>
+                    </div>
+                    <div class="cardText">Jugador argentino nacido el 22 de mayo de 1985 en la Ciudad Autónoma de Buenos
+                        Aires.
+                        Tiene una altura de 1,80 metros y un peso de 77.8 kg. Procede del club Cerro Porteño de
+                        Paraguay.
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="cardImage"><img src="img/Carrillo.png"></div>
+                <div class="content">
+                    <div class="heading">
+                        <div class="del">Delantero</div>
+                        <h4>Guido Carrillo</h4>
+                    </div>
+                    <div class="cardText">Jugador argentino nacido el 25 de mayo de 1991 en Magdalena, Buenos Aires.
+                        Tiene una altura de 1,87 metros y un peso de 88.8 kg. Procede del club Henan SSLM de China.
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div>
+            <a href="vistas/verJugadores.jsp"
+                style="background-color: green; color: white; padding: 10px 20px; text-decoration: none; border: none; cursor: pointer; margin: 10px 0;">
+                Ver otros jugadores
+            </a>
+        </div>
+    </section>
+    <section class="estadio" id="estadio" style="margin-top: 20px;">
+        <img src="img/Estadio.jpg" class="estadioImage">
+        <div class="estadioText">
+            <h3>Estadio Jorge Luis Hirschi</h3>
+            <p>Denominado oficialmente como Estadio UNO Jorge Luis Hirschi. Está ubicada en la avenida 1 entre 55 y 57,
+                en la ciudad de La Plata, y cuenta con capacidad para albergar a 32 530 espectadores,lo que la convierte
+                en el recinto deportivo no gubernamental de mayor aforo de la región.
+                Por sus nuevos atributos, innovaciones tecnológicas y sustentabilidad ambiental, está considerado uno de
+                los estadios de fútbol más modernos a nivel mundial, con características únicas en el fútbol argentino.
+            </p>
+            <a href="#" class="btnWhite">Conocé más</a>
+        </div>
+
+    </section>
+    <section class="anotate" id="anotate">
+        <h3>AGREGA UN</h3>
+        <h2>JUGADOR</h2>
+        <p>Anótate como jugador o anota a un jugador que conozcas</p>
+        <form action="registroJugador" method="post">
+            <div class="inputGroup">
+                <input type="text" name="nombre" id="nombre" placeholder="Nombre">
+                <input type="text" name="apellido" id="apellido" placeholder="Apellido">
+            </div>
+            <textarea name="tema" id="tema" cols="30" rows="5" placeholder="Contanos sobre vos"></textarea>
+            <p class="info">Recuerda incluir en que posicion jugas</p>
+            <input type="submit" id="btnEnviar" value="Enviar">
+        </form>
+    </section>
+    <footer>
+        <ul class="footer">
+            <li><a href="#">Preguntas frecuentes</a></li>
+            <li><a href="#">Contáctanos</a></li>
+            <li><a href="#">Prensa</a></li>
+            <li><a href="#">Conferencias</a></li>
+            <li><a href="#">Términos y condiciones</a></li>
+            <li><a href="#">Privacidad</a></li>
+            <li><a href="#">Estudiantes</a></li>
+        </ul>
+    </footer>
+</body>
+
+</html>

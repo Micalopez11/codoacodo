@@ -1,0 +1,6 @@
+controlador\GestionJugadorServlet.class
+controlador\RegistroJugador.class
+util\ConexionDB.class
+dao\JugadoresDAO.class
+modelo\Jugador.class
+controlador\LoginServlet.class
